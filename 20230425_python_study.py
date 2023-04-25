@@ -61,35 +61,35 @@ def soltion(my_string):
     return list(my_string)
 print(soltion('Hello World'))
 
-# # a와 b 출력하기
-#
-# a, b = map(int, input().strip().split(' '))
-# print('a =',a,'b =',b)
-#
-# # 문자열 반복해서 출력하기
-#
-# a, b = input().strip().split(' ')
-# b = int(b)
-# result = a*b
-# print(result)
-#
-# # 대소문자 바꿔서 출력하기
-# str = input()
-# result = ''
-# for char in str:
-#     if char.isupper():
-#         result += char.lower()
-#     else:
-#         result += char.upper()
-#
-# print(result)
-#
-# # 특수문자 출력하기
-# print('!@#$%^&*(\\'"'"'"<>?:;')
-#
-# # 덧셈식 출력하기
-# a, b = map(int, input().strip().split(' '))
-# print(a,'+',b,'=',a+b)
+# a와 b 출력하기
+
+a, b = map(int, input().strip().split(' '))
+print('a =',a,'b =',b)
+
+# 문자열 반복해서 출력하기
+
+a, b = input().strip().split(' ')
+b = int(b)
+result = a*b
+print(result)
+
+# 대소문자 바꿔서 출력하기
+str = input()
+result = ''
+for char in str:
+    if char.isupper():
+        result += char.lower()
+    else:
+        result += char.upper()
+
+print(result)
+
+# 특수문자 출력하기
+print('!@#$%^&*(\\'"'"'"<>?:;')
+
+# 덧셈식 출력하기
+a, b = map(int, input().strip().split(' '))
+print(a,'+',b,'=',a+b)
 
 # 문자열 붙여서 출력하기
 
@@ -115,3 +115,26 @@ def solution(my_string, overwrite_string, s):
     return answer
 
 print(solution('He11oWor1d','lloWorl', 2))
+
+# 정수 부분
+def solution(flo):
+    return int(flo)
+
+# flag에 따라 다른 값 반환하기
+def solution(a, b, flag):
+    if flag:
+        return a + b
+    else:
+        return a - b
+
+# n의 배수
+def solution(num, n):
+    if num % n == 0:
+        return 1
+    else:
+        return 0
+
+# 소문자로 바꾸기
+
+def solution(my_string):
+    return my_string.lower()

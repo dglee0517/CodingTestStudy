@@ -18,7 +18,6 @@ for x in a:
     if total > max:
         max = total
         res = x
-
 print(res)
 
 # 파이썬 str함수 사용해서 풀이
